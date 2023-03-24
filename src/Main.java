@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -11,8 +12,8 @@ public class Main {
 //Целочисленный массив, заполненный тремя цифрами — 1, 2 и 3 — с помощью ключевого слова new.1
 
         int[] numbers = new int[3];
-        numbers[0] = 1;
-        numbers[1] = 2;
+        numbers[0] = 6;
+        numbers[1] = 5;
         numbers[2] = 3;
 //Массив, в котором можно хранить
 // три дробных числа — 1.57, 7.654, 9.986. Массив сразу заполните значениями.
@@ -114,6 +115,27 @@ public class Main {
         }
     }
 
+    public static void task4(){
+        System.out.println("Задача 4");
+//        Пройдитесь по первому целочисленному массиву и все нечетные числа в
+//        нем сделайте четными (нужно прибавить 1).
+//Важно: код должен работать с любым целочисленным массивом, поэтому для решения
+// задания используйте циклы.
+//Распечатайте результат преобразования в консоль.
 
+        int[] numbers = new int[3];
+        numbers[0] = 6;
+        numbers[1] = 5;
+        numbers[2] = 3;
 
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 2 != 0){
+                numbers[i] += 1;
+                System.out.println(numbers[i]);
+            } else {
+                System.out.println(numbers[i]);
+            }
+        }
+
+    }
 }
